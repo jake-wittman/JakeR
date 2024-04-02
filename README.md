@@ -6,7 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of JakeR is to …
+This is just a set of custom functions I wrote that I use most days in
+my workflow.
 
 ## Installation
 
