@@ -16,3 +16,5 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://github.com/jake-wittman/JakeR
 BugReports: https://github.com/jake-wittman/JakeR/issues
+Imports: 
+    targets
