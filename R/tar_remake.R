@@ -25,6 +25,6 @@
 #' tar_remake(starts_with('model'))
 #' }
 tar_remake <- function(names) {
-  targets::tar_make( {{ names }}, reporter = 'timestamp_positives' )
+  targets::tar_make( {{ names }}, reporter = 'timestamp' )
   targets::tar_load( {{ names }}, envir = .GlobalEnv )
 }
