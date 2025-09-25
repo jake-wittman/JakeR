@@ -27,5 +27,7 @@
 tar_remake <- function(names, notify = FALSE) {
   targets::tar_make({{ names }}, reporter = 'timestamp')
   targets::tar_load({{ names }}, envir = .GlobalEnv)
-  JakeR::notifyWindows()
+  if (notify == TRUE) {
+    JakeR::notifyWindows()
+  }
 }
