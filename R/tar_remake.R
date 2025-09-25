@@ -24,7 +24,8 @@
 #' \dontrun{
 #' tar_remake(starts_with('model'))
 #' }
-tar_remake <- function(names) {
-  targets::tar_make( {{ names }}, reporter = 'timestamp' )
-  targets::tar_load( {{ names }}, envir = .GlobalEnv )
+tar_remake <- function(names, notify = FALSE) {
+  targets::tar_make({{ names }}, reporter = 'timestamp')
+  targets::tar_load({{ names }}, envir = .GlobalEnv)
+  JakeR::notifyWindows()
 }
