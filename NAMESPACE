@@ -2,5 +2,6 @@
 
 export("%nin%")
 export(joinDataWithDictionary)
+export(notifyWindows)
 export(specifyDecimal)
 export(tar_remake)
