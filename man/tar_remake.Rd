@@ -4,7 +4,7 @@
 \alias{tar_remake}
 \title{Make and load a target}
 \usage{
-tar_remake(names)
+tar_remake(names, notify = FALSE, reporter = "balanced")
 }
 \arguments{
 \item{names}{The name(s) of the target to be remade. Accepts tidyselect helpers.}
