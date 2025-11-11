@@ -2,7 +2,12 @@
 
 export("%nin%")
 export(bizdaysWithTime)
+export(generateCompanyHolidays)
 export(joinDataWithDictionary)
 export(notifyWindows)
 export(specifyDecimal)
 export(tar_remake)
+importFrom(timeDate,USLaborDay)
+importFrom(timeDate,USMemorialDay)
+importFrom(timeDate,USPresidentsDay)
+importFrom(timeDate,USThanksgivingDay)

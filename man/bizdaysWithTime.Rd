@@ -4,7 +4,7 @@
 \alias{bizdaysWithTime}
 \title{Calculate Business Days with Decimal Time}
 \usage{
-bizdaysWithTime(start_dt, end_dt, cal = "my_calendar")
+bizdaysWithTime(start_dt, end_dt, cal)
 }
 \arguments{
 \item{start_dt}{A POSIXct, POSIXlt, Date object, or vector of such objects

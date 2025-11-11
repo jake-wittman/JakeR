@@ -77,7 +77,7 @@
 #' \code{\link[bizdays]{is.bizday}} for checking if a date is a business day
 #'
 #' @export
-bizdaysWithTime <- function(start_dt, end_dt, cal = "my_calendar") {
+bizdaysWithTime <- function(start_dt, end_dt, cal) {
   # Convert to POSIXct for consistent handling
   start_dt <- as.POSIXct(start_dt)
   end_dt <- as.POSIXct(end_dt)
