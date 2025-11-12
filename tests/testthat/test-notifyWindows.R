@@ -1,7 +1,5 @@
 # tests/testthat/test-notifyWindows.R
 
-library(testthat)
-
 test_that("notifyWindows works with default parameters", {
   # Use a variable to capture the command instead of function attributes
   captured_command <- NULL

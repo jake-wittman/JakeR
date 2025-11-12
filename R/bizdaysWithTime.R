@@ -43,7 +43,7 @@
 #'
 #' # Create a calendar with US holidays
 #' holidays <- as.Date(c("2025-01-01", "2025-01-20", "2025-12-25"))
-#' create.calendar(
+#' cal <- bizdays::create.calendar(
 #'   name = "my_calendar",
 #'   holidays = holidays,
 #'   weekdays = c("saturday", "sunday")
@@ -52,12 +52,12 @@
 #' # Single pair: Friday 2:30 PM to Monday 10:15 AM
 #' start <- as.POSIXct("2025-01-03 14:30:00")
 #' end <- as.POSIXct("2025-01-06 10:15:00")
-#' bizdaysWithTime(start, end)  # Returns ~1.82
+#' bizdaysWithTime(start, end, cal)  # Returns ~1.82
 #'
 #' # Multiple pairs (vectorized)
 #' starts <- as.POSIXct(c("2025-01-03 14:30:00", "2025-01-17 09:00:00", "2025-01-10 08:00:00"))
 #' ends <- as.POSIXct(c("2025-01-06 10:15:00", "2025-01-20 17:00:00", "2025-01-13 16:30:00"))
-#' bizdaysWithTime(starts, ends)  # Returns vector of 3 values
+#' bizdaysWithTime(starts, ends, cal)  # Returns vector of 3 values
 #'
 #' # Usage with data frame (fully vectorized)
 #' library(dplyr)
@@ -68,7 +68,7 @@
 #'
 #' df |>
 #'   mutate(
-#'     biz_days = bizdaysWithTime(start, end)
+#'     biz_days = bizdaysWithTime(start, end, cal)
 #'   )
 #'
 #' @seealso

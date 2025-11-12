@@ -3,6 +3,8 @@
 #' Make and load a target from a targets workflow
 #'
 #' @param names The name(s) of the target to be remade. Accepts tidyselect helpers.
+#' @param notify Pop up a windows notification that the pipeline is done. Only works on Windows
+#' @param reporter Determinse how verbose the targets reporter is. Defaults to 'balanced'.
 #'
 #' @return If the target is successfully made, loads the target into the workspace.
 #' @export
@@ -19,7 +21,7 @@
 #'            tar_target(z, y1 + y2))
 #'     }, ask = FALSE)
 #'     tar_remake(starts_with("y")) # Only processes y1 and y2.
-#'   }
+#'   })
 #'   }
 #' \dontrun{
 #' tar_remake(starts_with('model'))

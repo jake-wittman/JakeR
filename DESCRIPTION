@@ -1,22 +1,27 @@
-Package: JakeR
 Type: Package
+Package: JakeR
 Title: Some Odds and Ends Functions Jake Uses
 Version: 0.1.1
-Authors@R: person("Jake", "Wittman", , "jake.wittman33@proton.me", role = c('aut', 'cre'))
+Authors@R: 
+    person("Jake", "Wittman", , "jake.wittman33@proton.me", role = c("aut", "cre"))
 Maintainer: Jake Wittman <jake.wittman33@proton.me>
-Description: A collection of custom functions I make use of regularly in my workflow.
-    Use four spaces when indenting paragraphs within the Description. I don't have more than one paragraph at this point.
+Description: A collection of custom functions I make use of regularly in
+    my workflow.  Use four spaces when indenting paragraphs within the
+    Description. I don't have more than one paragraph at this point.
 License: GPL (>= 3)
+URL: https://github.com/jake-wittman/JakeR
+BugReports: https://github.com/jake-wittman/JakeR/issues
+Imports: 
+    bizdays,
+    DescTools,
+    dplyr,
+    targets (>= 1.11.4),
+    tidyselect,
+    timeDate
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Suggests: 
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
-URL: https://github.com/jake-wittman/JakeR
-BugReports: https://github.com/jake-wittman/JakeR/issues
-Imports: 
-    dplyr,
-    targets,
-    tidyselect

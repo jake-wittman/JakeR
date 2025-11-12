@@ -1,4 +1,3 @@
-library(testthat)
 test_that("multipleModes handles single mode correctly", {
   # Single clear mode
   expect_equal(multipleModes(c(1, 2, 2, 3, 4)), 2)

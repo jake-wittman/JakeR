@@ -1,6 +1,3 @@
-library(testthat)
-library(bizdays)
-
 # Setup test calendar
 holidays_2025 <- as.Date(c(
   "2025-01-01", # New Year's Day
@@ -8,7 +5,7 @@ holidays_2025 <- as.Date(c(
   "2025-12-25" # Christmas
 ))
 
-create.calendar(
+bizdays::create.calendar(
   name = "test_calendar",
   holidays = holidays_2025,
   weekdays = c("saturday", "sunday")

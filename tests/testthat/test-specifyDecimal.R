@@ -1,7 +1,5 @@
 # tests/testthat/test-specifyDecimal.R
 
-library(testthat)
-
 test_that("specifyDecimal works with basic numeric inputs", {
   expect_equal(specifyDecimal(3.14159, 2), "3.14")
   expect_equal(specifyDecimal(3.14159, 3), "3.142")

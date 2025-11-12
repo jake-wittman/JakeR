@@ -8,6 +8,10 @@ tar_remake(names, notify = FALSE, reporter = "balanced")
 }
 \arguments{
 \item{names}{The name(s) of the target to be remade. Accepts tidyselect helpers.}
+
+\item{notify}{Pop up a windows notification that the pipeline is done. Only works on Windows}
+
+\item{reporter}{Determinse how verbose the targets reporter is. Defaults to 'balanced'.}
 }
 \value{
 If the target is successfully made, loads the target into the workspace.
@@ -27,7 +31,7 @@ if (identical(Sys.getenv("TAR_EXAMPLES"), "true")) {
            tar_target(z, y1 + y2))
     }, ask = FALSE)
     tar_remake(starts_with("y")) # Only processes y1 and y2.
-  }
+  })
   }
 \dontrun{
 tar_remake(starts_with('model'))
