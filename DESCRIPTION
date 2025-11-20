@@ -17,6 +17,8 @@ Imports:
     dplyr,
     targets (>= 1.11.4),
     tidyselect,
+    tidyr,
+    stringr,
     timeDate
 Suggests: 
     testthat (>= 3.0.0)
