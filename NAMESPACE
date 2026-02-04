@@ -2,6 +2,7 @@
 
 export("%nin%")
 export(bizdaysWithTime)
+export(coalesce_join)
 export(createMatchingKeys)
 export(generateCompanyHolidays)
 export(joinDataWithDictionary)
